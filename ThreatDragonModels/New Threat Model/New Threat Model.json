@@ -901,7 +901,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "mTLS/TLS",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -910,21 +910,174 @@
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
-              "protocol": "",
+              "protocol": "mTLS/TLS",
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "mTLS/TLS"
+            ],
+            "id": "f3edf70d-f810-42fc-bdca-90155d081c21",
+            "source": {
+              "cell": "02bde570-42af-42f8-bb80-f6cd1646b6ea",
+              "port": "f193305d-dc38-4f22-abd8-c4a166afe1d9"
+            },
+            "target": {
+              "cell": "452c2c33-19bd-4b96-b311-742c996ab426",
+              "port": "d47b43cc-9465-4a49-b7fd-d7e3b69da9c3"
+            },
+            "vertices": [
+              {
+                "x": 960,
+                "y": 335
+              },
+              {
+                "x": 810,
+                "y": 300
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "mTLS/HTTPS/gRPC",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "mTLS/HTTPS/gRPC",
+              "threats": []
+            },
+            "labels": [
+              "mTLS/HTTPS/gRPC"
             ],
             "id": "e0cc02a0-3a83-4410-b3ac-f3a868795d90",
             "source": {
-              "x": 1220,
-              "y": 330
+              "cell": "a6cf15e3-3862-4be0-8fd7-ce6aee699858",
+              "port": "75369b34-f239-444b-a51a-a297615bcaca"
             },
             "target": {
-              "x": 1320,
-              "y": 430
-            }
+              "cell": "02bde570-42af-42f8-bb80-f6cd1646b6ea",
+              "port": "6c2e6c8c-ad46-43ad-937e-67cf019969f3"
+            },
+            "vertices": [
+              {
+                "x": 1075,
+                "y": -40
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "mTLS/MQTT",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "mTLS",
+              "threats": []
+            },
+            "labels": [
+              "mTLS/MQTT"
+            ],
+            "id": "56484b29-8899-458d-9af7-4f1d3880f9d1",
+            "source": {
+              "cell": "53ce55ff-9bca-4d8c-975c-317f3da0f682",
+              "port": "6bbefc74-05e6-4c5a-94ea-7fca6431717d"
+            },
+            "target": {
+              "cell": "03d0b764-d161-4a96-b477-b01c51e402e6",
+              "port": "6c2e6c8c-ad46-43ad-937e-67cf019969f3"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "DSRC",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "DSRC",
+              "threats": []
+            },
+            "labels": [
+              "DSRC"
+            ],
+            "id": "6af59071-f8fb-4918-aef5-6ae0d41f12a2",
+            "source": {
+              "cell": "33ac42c4-a064-4136-9ef0-e5d76ba65690",
+              "port": "4872c624-b982-4f0e-b0d1-2d589cefb8f6"
+            },
+            "target": {
+              "cell": "53ce55ff-9bca-4d8c-975c-317f3da0f682",
+              "port": "6c2e6c8c-ad46-43ad-937e-67cf019969f3"
+            },
+            "vertices": []
           },
           {
             "position": {
@@ -1291,8 +1444,8 @@
           },
           {
             "position": {
-              "x": 1360.75,
-              "y": 160
+              "x": 0,
+              "y": -295
             },
             "size": {
               "width": 112.5,
@@ -1408,8 +1561,8 @@
           },
           {
             "position": {
-              "x": 760,
-              "y": 270
+              "x": 1010,
+              "y": 290
             },
             "size": {
               "width": 130,
@@ -1525,6 +1678,126 @@
               "threats": []
             },
             "zIndex": 15
+          },
+          {
+            "position": {
+              "x": 218.75,
+              "y": -300
+            },
+            "size": {
+              "width": 130,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "Sensors"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "6c2e6c8c-ad46-43ad-937e-67cf019969f3"
+                },
+                {
+                  "group": "right",
+                  "id": "75369b34-f239-444b-a51a-a297615bcaca"
+                },
+                {
+                  "group": "bottom",
+                  "id": "6bbefc74-05e6-4c5a-94ea-7fca6431717d"
+                },
+                {
+                  "group": "left",
+                  "id": "f193305d-dc38-4f22-abd8-c4a166afe1d9"
+                }
+              ]
+            },
+            "id": "53ce55ff-9bca-4d8c-975c-317f3da0f682",
+            "data": {
+              "type": "tm.Process",
+              "name": "Sensors",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "zIndex": 16
           }
         ],
         "description": "Edge computing V2X DFD"
