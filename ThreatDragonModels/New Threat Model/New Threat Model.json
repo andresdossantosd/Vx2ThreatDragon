@@ -1,26 +1,314 @@
 {
-  "version": "2.5.0",
   "summary": {
-    "title": "New Threat Model",
-    "owner": "",
-    "description": "",
-    "id": 0
+    "title": "DFD Edge IoT simplificado (CCAV)",
+    "owner": "equipo-seguridad",
+    "description": "Modelo DFD para arquitectura de edge computing IoT/CCAV simplificada, con límites de confianza y flujos protocolizados.",
+    "id": "734d8cf4-4d81-4024-8bd4-431c5e071839",
+    "version": "2.0"
   },
   "detail": {
-    "contributors": [],
+    "threats": [],
     "diagrams": [
       {
-        "id": 0,
-        "title": "New STRIDE diagram",
-        "diagramType": "STRIDE",
-        "placeholder": "New STRIDE diagram description",
-        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
-        "version": "2.5.0",
-        "cells": []
+        "id": "1f1bc343-bea5-44ff-863d-f9c4d9ef1d85",
+        "title": "DFD-0 Edge",
+        "diagramType": "DFD",
+        "diagramJson": {
+          "cells": [
+            {
+              "id": "1dcd9292-8936-4e49-b31a-2f9571980347",
+              "type": "tm.Boundary",
+              "name": "Zona Externa (No Confiable)",
+              "bounds": {
+                "x": 20,
+                "y": 10,
+                "width": 540,
+                "height": 110
+              }
+            },
+            {
+              "id": "5bd61395-ad01-447b-aef6-ffbb503aaccc",
+              "type": "tm.Boundary",
+              "name": "DMZ Edge (Ingreso)",
+              "bounds": {
+                "x": 200,
+                "y": 110,
+                "width": 280,
+                "height": 160
+              }
+            },
+            {
+              "id": "665803e6-4c53-4218-9743-b249f8c0ac23",
+              "type": "tm.Boundary",
+              "name": "Zona de Procesamiento Confiable (Edge)",
+              "bounds": {
+                "x": 100,
+                "y": 260,
+                "width": 440,
+                "height": 170
+              }
+            },
+            {
+              "id": "f7875d82-b09a-4170-be66-5ff61f063249",
+              "type": "tm.Boundary",
+              "name": "Red/Segmento de Actuación (OT)",
+              "bounds": {
+                "x": 320,
+                "y": 340,
+                "width": 200,
+                "height": 110
+              }
+            },
+            {
+              "id": "f6c66a17-9cd7-420f-8054-728d710a39f6",
+              "type": "tm.Boundary",
+              "name": "Almacenamiento",
+              "bounds": {
+                "x": 220,
+                "y": 430,
+                "width": 240,
+                "height": 90
+              }
+            },
+            {
+              "id": "969fbc6a-11fd-490d-a06a-528303113770",
+              "type": "tm.Actor",
+              "name": "CAVs / Fleet",
+              "description": "Vehículos conectados y autónomos (externo)",
+              "bounds": {
+                "x": 40,
+                "y": 80,
+                "width": 120,
+                "height": 60
+              }
+            },
+            {
+              "id": "dc9980dc-63b1-4dc4-8674-a3b0dc794c7d",
+              "type": "tm.Actor",
+              "name": "Other Edge Clouds",
+              "description": "Otras nubes de borde (externo)",
+              "bounds": {
+                "x": 220,
+                "y": 20,
+                "width": 140,
+                "height": 60
+              }
+            },
+            {
+              "id": "d4db8d14-dd30-4b16-b031-cb64d9510b00",
+              "type": "tm.Actor",
+              "name": "Core Cloud",
+              "description": "Nube central (externo)",
+              "bounds": {
+                "x": 420,
+                "y": 20,
+                "width": 120,
+                "height": 60
+              }
+            },
+            {
+              "id": "adc7cea9-77c1-4a7c-a913-33d92e6239ea",
+              "type": "tm.Actor",
+              "name": "Operador/Admin",
+              "description": "Usuarios de gestión (externo)",
+              "bounds": {
+                "x": 420,
+                "y": 300,
+                "width": 140,
+                "height": 60
+              }
+            },
+            {
+              "id": "f1094b7c-e01b-4689-8379-6083af027851",
+              "type": "tm.Process",
+              "name": "Communications",
+              "description": "Bus/Entry GW de comunicaciones",
+              "bounds": {
+                "x": 240,
+                "y": 110,
+                "width": 200,
+                "height": 60
+              }
+            },
+            {
+              "id": "189ea5f1-5788-40de-98bb-b794d039ed77",
+              "type": "tm.Process",
+              "name": "API & V2X Interface",
+              "description": "API, V2X y gateway de mensajes",
+              "bounds": {
+                "x": 240,
+                "y": 190,
+                "width": 200,
+                "height": 60
+              }
+            },
+            {
+              "id": "db7744b5-b51c-420a-9124-929aa300978a",
+              "type": "tm.Process",
+              "name": "Microservices",
+              "description": "Servicios de orquestación / lógicas ITS",
+              "bounds": {
+                "x": 140,
+                "y": 270,
+                "width": 170,
+                "height": 70
+              }
+            },
+            {
+              "id": "bb85bca8-f2de-4cea-bac4-68c4700533d2",
+              "type": "tm.Process",
+              "name": "Data Analysis",
+              "description": "Fusión de datos, localización, decisiones",
+              "bounds": {
+                "x": 330,
+                "y": 270,
+                "width": 170,
+                "height": 70
+              }
+            },
+            {
+              "id": "ef687645-d795-4350-8075-e53892199b72",
+              "type": "tm.Process",
+              "name": "Monitoring",
+              "description": "Monitoreo/telemetría/alertas",
+              "bounds": {
+                "x": 140,
+                "y": 360,
+                "width": 170,
+                "height": 60
+              }
+            },
+            {
+              "id": "e3844de1-0e8a-4af4-bcd5-df07ee412b79",
+              "type": "tm.Process",
+              "name": "Actuators",
+              "description": "Control de señalización, barreras, etc.",
+              "bounds": {
+                "x": 330,
+                "y": 360,
+                "width": 170,
+                "height": 60
+              }
+            },
+            {
+              "id": "6e68f5da-1ce4-4c90-997c-8f018921ad7e",
+              "type": "tm.Store",
+              "name": "Data Storage",
+              "description": "Base de datos/objetos/logs",
+              "bounds": {
+                "x": 240,
+                "y": 440,
+                "width": 200,
+                "height": 70
+              }
+            },
+            {
+              "id": "e3adabaf-d949-4127-87b1-dfc8c98865a7",
+              "type": "tm.Flow",
+              "name": "V2X data",
+              "description": "DSRC/ITS-G5 (IEEE 802.11p) o C-V2X PC5; alternativo: MQTT/HTTPS sobre celular (Uu)",
+              "source": "969fbc6a-11fd-490d-a06a-528303113770",
+              "target": "189ea5f1-5788-40de-98bb-b794d039ed77"
+            },
+            {
+              "id": "f9f7e75a-3d08-48ee-9511-2c0c4210c828",
+              "type": "tm.Flow",
+              "name": "Cloud backhaul",
+              "description": "HTTPS/mTLS o IPSec túnel",
+              "source": "d4db8d14-dd30-4b16-b031-cb64d9510b00",
+              "target": "f1094b7c-e01b-4689-8379-6083af027851"
+            },
+            {
+              "id": "2b685286-032c-4d38-a97f-3d3b739743b1",
+              "type": "tm.Flow",
+              "name": "Edge-to-Edge",
+              "description": "HTTPS/mTLS o IPSec",
+              "source": "dc9980dc-63b1-4dc4-8674-a3b0dc794c7d",
+              "target": "f1094b7c-e01b-4689-8379-6083af027851"
+            },
+            {
+              "id": "00902a4c-ec81-495f-8f97-3b83b45dcfef",
+              "type": "tm.Flow",
+              "name": "Admin ops",
+              "description": "HTTPS/mTLS + MFA",
+              "source": "adc7cea9-77c1-4a7c-a913-33d92e6239ea",
+              "target": "ef687645-d795-4350-8075-e53892199b72"
+            },
+            {
+              "id": "5270ad24-076f-436a-bd9c-d92f4491cab6",
+              "type": "tm.Flow",
+              "name": "Ingress",
+              "description": "WAF/Reverse proxy hacia API (HTTP/2 + TLS)",
+              "source": "f1094b7c-e01b-4689-8379-6083af027851",
+              "target": "189ea5f1-5788-40de-98bb-b794d039ed77"
+            },
+            {
+              "id": "e36c3dfa-ab16-4ce2-b361-5e9515f3b6fe",
+              "type": "tm.Flow",
+              "name": "Service mesh",
+              "description": "gRPC mTLS / HTTP/2",
+              "source": "189ea5f1-5788-40de-98bb-b794d039ed77",
+              "target": "db7744b5-b51c-420a-9124-929aa300978a"
+            },
+            {
+              "id": "ea070604-cb82-41b4-bd5f-f52c346a0e38",
+              "type": "tm.Flow",
+              "name": "Events",
+              "description": "Kafka/AMQP sobre TLS + SASL/mTLS",
+              "source": "db7744b5-b51c-420a-9124-929aa300978a",
+              "target": "bb85bca8-f2de-4cea-bac4-68c4700533d2"
+            },
+            {
+              "id": "20aa1ff2-7607-4fca-bf04-aa666e9e9c10",
+              "type": "tm.Flow",
+              "name": "Persist",
+              "description": "SQL/TLS o S3-compatible TLS + KMS",
+              "source": "db7744b5-b51c-420a-9124-929aa300978a",
+              "target": "6e68f5da-1ce4-4c90-997c-8f018921ad7e"
+            },
+            {
+              "id": "e36b7886-88be-418c-8f72-6c68a4fc4883",
+              "type": "tm.Flow",
+              "name": "Telemetry",
+              "description": "OTLP/gRPC TLS o HTTPS",
+              "source": "db7744b5-b51c-420a-9124-929aa300978a",
+              "target": "ef687645-d795-4350-8075-e53892199b72"
+            },
+            {
+              "id": "8bc4c324-5705-4e67-a40f-5ea57fb9de16",
+              "type": "tm.Flow",
+              "name": "Actuation",
+              "description": "OPC UA (TLS/mTLS) o NTCIP/SNMPv3",
+              "source": "db7744b5-b51c-420a-9124-929aa300978a",
+              "target": "e3844de1-0e8a-4af4-bcd5-df07ee412b79"
+            },
+            {
+              "id": "c32e7c34-59dd-44bd-8ff1-6ed0d6a252bf",
+              "type": "tm.Flow",
+              "name": "Read models",
+              "description": "gRPC mTLS",
+              "source": "bb85bca8-f2de-4cea-bac4-68c4700533d2",
+              "target": "db7744b5-b51c-420a-9124-929aa300978a"
+            },
+            {
+              "id": "c6a0b4e7-3949-4a51-9890-b4c0501e1452",
+              "type": "tm.Flow",
+              "name": "Store analytics",
+              "description": "SQL/TLS",
+              "source": "bb85bca8-f2de-4cea-bac4-68c4700533d2",
+              "target": "6e68f5da-1ce4-4c90-997c-8f018921ad7e"
+            },
+            {
+              "id": "a20c6cde-d32e-42ed-ab1a-a6adb35d40d2",
+              "type": "tm.Flow",
+              "name": "Logs/metrics",
+              "description": "OTLP/gRPC TLS",
+              "source": "ef687645-d795-4350-8075-e53892199b72",
+              "target": "6e68f5da-1ce4-4c90-997c-8f018921ad7e"
+            }
+          ]
+        }
       }
-    ],
-    "diagramTop": 1,
-    "reviewer": "",
-    "threatTop": 0
+    ]
   }
 }
