@@ -1243,13 +1243,13 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Trust Boundary",
+              "name": "",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
             "labels": [
-              "Trust Boundary"
+              ""
             ],
             "id": "1e5901da-6018-4ef6-99bc-b48e0a7a51ba",
             "source": {
@@ -1265,7 +1265,17 @@
                 "x": 670,
                 "y": -290
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "position": {
