@@ -1063,7 +1063,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "MQTT/HTTPS",
+              "name": "MQTT/HTTPS/DSRC",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1076,7 +1076,7 @@
               "threats": []
             },
             "labels": [
-              "MQTT/HTTPS"
+              "MQTT/HTTPS/DSRC"
             ],
             "id": "df1b643e-f7a9-4daf-9de6-3653ddbd3636",
             "source": {
@@ -1259,16 +1259,6 @@
             "target": {
               "x": 750,
               "y": -240
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
             },
             "vertices": [
               {
