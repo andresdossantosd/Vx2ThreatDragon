@@ -380,8 +380,8 @@
           },
           {
             "position": {
-              "x": 603.75,
-              "y": -600
+              "x": 910,
+              "y": -470
             },
             "size": {
               "width": 112.5,
@@ -1187,17 +1187,7 @@
               "cell": "b3deba33-c1e9-4673-8b1f-b205ee510b17",
               "port": "6bbefc74-05e6-4c5a-94ea-7fca6431717d"
             },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -1237,13 +1227,45 @@
             "id": "6747d82a-8917-4c57-885a-6dd601446fe1",
             "source": {
               "cell": "b3deba33-c1e9-4673-8b1f-b205ee510b17",
-              "port": "6c2e6c8c-ad46-43ad-937e-67cf019969f3"
+              "port": "75369b34-f239-444b-a51a-a297615bcaca"
             },
             "target": {
               "cell": "75edaf94-bb9b-47f6-bd70-ed266e72367c",
-              "port": "13c7df40-c2b8-4ceb-946a-7a74def4e42b"
+              "port": "e76c52e7-1caa-4eee-b823-383bfe4b7b9d"
             },
             "vertices": []
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "1e5901da-6018-4ef6-99bc-b48e0a7a51ba",
+            "source": {
+              "x": 580,
+              "y": -240
+            },
+            "target": {
+              "x": 750,
+              "y": -240
+            },
+            "vertices": [
+              {
+                "x": 670,
+                "y": -290
+              }
+            ]
           },
           {
             "position": {
@@ -1491,7 +1513,7 @@
           {
             "position": {
               "x": 595,
-              "y": -440
+              "y": -490
             },
             "size": {
               "width": 130,
