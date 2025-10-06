@@ -1245,7 +1245,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Kubernetes \nNodes and \nmicros"
+                "text": "Kubernetes \nNodes and \nmicros gw"
               },
               "body": {
                 "stroke": "#333333",
@@ -1341,7 +1341,7 @@
             "id": "f08463c2-fe65-4c2a-a503-a365897f2372",
             "data": {
               "type": "tm.Process",
-              "name": "Kubernetes \nNodes and \nmicros",
+              "name": "Kubernetes \nNodes and \nmicros gw",
               "description": "Queues\nmicroHTTP\n",
               "outOfScope": false,
               "isTrustBoundary": false,
