@@ -139,8 +139,8 @@
           },
           {
             "position": {
-              "x": 300,
-              "y": 290
+              "x": 330,
+              "y": 305
             },
             "size": {
               "width": 120,
@@ -380,8 +380,8 @@
           },
           {
             "position": {
-              "x": 648.75,
-              "y": 620
+              "x": 603.75,
+              "y": -600
             },
             "size": {
               "width": 112.5,
@@ -493,51 +493,6 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "PCIe/SATA",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "PCIe/SATA",
-              "threats": []
-            },
-            "labels": [
-              "PCIe/SATA"
-            ],
-            "id": "6747d82a-8917-4c57-885a-6dd601446fe1",
-            "source": {
-              "cell": "b3deba33-c1e9-4673-8b1f-b205ee510b17",
-              "port": "6bbefc74-05e6-4c5a-94ea-7fca6431717d"
-            },
-            "target": {
-              "cell": "75edaf94-bb9b-47f6-bd70-ed266e72367c",
-              "port": "b91047d3-66f1-4479-a8b7-c890c9d9111b"
             }
           },
           {
@@ -729,52 +684,6 @@
             },
             "target": {
               "cell": "53ce55ff-9bca-4d8c-975c-317f3da0f682",
-              "port": "6c2e6c8c-ad46-43ad-937e-67cf019969f3"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "PCIe/SATA",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "PCIe/SATA",
-              "threats": []
-            },
-            "labels": [
-              "PCIe/SATA"
-            ],
-            "id": "c436286e-66d4-4bce-a850-55fbbece4771",
-            "source": {
-              "cell": "452c2c33-19bd-4b96-b311-742c996ab426",
-              "port": "d47b43cc-9465-4a49-b7fd-d7e3b69da9c3"
-            },
-            "target": {
-              "cell": "b3deba33-c1e9-4673-8b1f-b205ee510b17",
               "port": "6c2e6c8c-ad46-43ad-937e-67cf019969f3"
             },
             "vertices": []
@@ -1235,6 +1144,108 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "PCIe/SATA",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "PCIe/SATA",
+              "threats": []
+            },
+            "labels": [
+              "PCIe/SATA"
+            ],
+            "id": "c436286e-66d4-4bce-a850-55fbbece4771",
+            "source": {
+              "cell": "f08463c2-fe65-4c2a-a503-a365897f2372",
+              "port": "6c2e6c8c-ad46-43ad-937e-67cf019969f3"
+            },
+            "target": {
+              "cell": "b3deba33-c1e9-4673-8b1f-b205ee510b17",
+              "port": "6bbefc74-05e6-4c5a-94ea-7fca6431717d"
+            },
+            "vertices": [],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "PCIe/SATA",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "PCIe/SATA",
+              "threats": []
+            },
+            "labels": [
+              "PCIe/SATA"
+            ],
+            "id": "6747d82a-8917-4c57-885a-6dd601446fe1",
+            "source": {
+              "cell": "b3deba33-c1e9-4673-8b1f-b205ee510b17",
+              "port": "6c2e6c8c-ad46-43ad-937e-67cf019969f3"
+            },
+            "target": {
+              "cell": "75edaf94-bb9b-47f6-bd70-ed266e72367c",
+              "port": "13c7df40-c2b8-4ceb-946a-7a74def4e42b"
+            },
+            "vertices": []
+          },
+          {
             "position": {
               "x": 595,
               "y": -235
@@ -1475,12 +1486,19 @@
             },
             "children": [
               "857fa3ea-356c-404e-8d96-7b163255cc0a"
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "position": {
-              "x": 640,
-              "y": 420
+              "x": 595,
+              "y": -440
             },
             "size": {
               "width": 130,
