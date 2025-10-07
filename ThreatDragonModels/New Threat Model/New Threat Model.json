@@ -651,52 +651,6 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "DSRC",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "DSRC",
-              "threats": []
-            },
-            "labels": [
-              "DSRC"
-            ],
-            "id": "6af59071-f8fb-4918-aef5-6ae0d41f12a2",
-            "source": {
-              "cell": "33ac42c4-a064-4136-9ef0-e5d76ba65690",
-              "port": "4872c624-b982-4f0e-b0d1-2d589cefb8f6"
-            },
-            "target": {
-              "cell": "53ce55ff-9bca-4d8c-975c-317f3da0f682",
-              "port": "6c2e6c8c-ad46-43ad-937e-67cf019969f3"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
                   "name": "block"
                 },
                 "strokeDasharray": null
@@ -929,57 +883,6 @@
             ]
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "mTLS/HTTPS/gRPC",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "mTLS/HTTPS/gRPC",
-              "threats": []
-            },
-            "labels": [
-              "mTLS/HTTPS/gRPC"
-            ],
-            "id": "e0cc02a0-3a83-4410-b3ac-f3a868795d90",
-            "source": {
-              "cell": "a6cf15e3-3862-4be0-8fd7-ce6aee699858",
-              "port": "75369b34-f239-444b-a51a-a297615bcaca"
-            },
-            "target": {
-              "cell": "02bde570-42af-42f8-bb80-f6cd1646b6ea",
-              "port": "6c2e6c8c-ad46-43ad-937e-67cf019969f3"
-            },
-            "vertices": [
-              {
-                "x": 1050,
-                "y": 0
-              }
-            ]
-          },
-          {
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
@@ -1042,51 +945,6 @@
                 "y": -40
               }
             ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "MQTT/HTTPS/DSRC",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "MQTT/HTTPS/DSRC"
-            ],
-            "id": "df1b643e-f7a9-4daf-9de6-3653ddbd3636",
-            "source": {
-              "cell": "54e9c0ea-3d33-4916-a479-a55553bc219d",
-              "port": "b91047d3-66f1-4479-a8b7-c890c9d9111b"
-            },
-            "target": {
-              "cell": "02bde570-42af-42f8-bb80-f6cd1646b6ea",
-              "port": "6bbefc74-05e6-4c5a-94ea-7fca6431717d"
-            }
           },
           {
             "shape": "flow",
@@ -1264,6 +1122,183 @@
               {
                 "x": 670,
                 "y": -290
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "DSRC",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "DSRC",
+              "threats": []
+            },
+            "labels": [
+              "DSRC"
+            ],
+            "id": "6af59071-f8fb-4918-aef5-6ae0d41f12a2",
+            "source": {
+              "cell": "33ac42c4-a064-4136-9ef0-e5d76ba65690",
+              "port": "4872c624-b982-4f0e-b0d1-2d589cefb8f6"
+            },
+            "target": {
+              "cell": "53ce55ff-9bca-4d8c-975c-317f3da0f682",
+              "port": "6c2e6c8c-ad46-43ad-937e-67cf019969f3"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "MQTT/HTTPS/DSRC",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "584dff56-fbc6-4e11-b797-e43a7ab82f70",
+                  "title": "Manipulación de señales (replay)",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "No suggestions available for this context. Add one manually please",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "MQTT/HTTPS/DSRC"
+            ],
+            "id": "df1b643e-f7a9-4daf-9de6-3653ddbd3636",
+            "source": {
+              "cell": "54e9c0ea-3d33-4916-a479-a55553bc219d",
+              "port": "b91047d3-66f1-4479-a8b7-c890c9d9111b"
+            },
+            "target": {
+              "cell": "02bde570-42af-42f8-bb80-f6cd1646b6ea",
+              "port": "6bbefc74-05e6-4c5a-94ea-7fca6431717d"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "mTLS/HTTPS/gRPC",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "mTLS/HTTPS/gRPC",
+              "threats": [
+                {
+                  "id": "e3a02127-8ed4-4e0a-a562-a80113be1a31",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 3,
+                  "score": ""
+                }
+              ]
+            },
+            "labels": [
+              "mTLS/HTTPS/gRPC"
+            ],
+            "id": "e0cc02a0-3a83-4410-b3ac-f3a868795d90",
+            "source": {
+              "cell": "a6cf15e3-3862-4be0-8fd7-ce6aee699858",
+              "port": "75369b34-f239-444b-a51a-a297615bcaca"
+            },
+            "target": {
+              "cell": "02bde570-42af-42f8-bb80-f6cd1646b6ea",
+              "port": "6c2e6c8c-ad46-43ad-937e-67cf019969f3"
+            },
+            "vertices": [
+              {
+                "x": 1050,
+                "y": 0
               }
             ]
           },
@@ -2110,6 +2145,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 3
   }
 }
