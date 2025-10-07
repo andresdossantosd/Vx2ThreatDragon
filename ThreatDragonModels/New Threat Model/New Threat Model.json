@@ -380,8 +380,8 @@
           },
           {
             "position": {
-              "x": 910,
-              "y": -470
+              "x": 603.75,
+              "y": -430
             },
             "size": {
               "width": 112.5,
@@ -1002,98 +1002,6 @@
             ]
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "PCIe/SATA",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "PCIe/SATA",
-              "threats": []
-            },
-            "labels": [
-              "PCIe/SATA"
-            ],
-            "id": "c436286e-66d4-4bce-a850-55fbbece4771",
-            "source": {
-              "cell": "f08463c2-fe65-4c2a-a503-a365897f2372",
-              "port": "6c2e6c8c-ad46-43ad-937e-67cf019969f3"
-            },
-            "target": {
-              "cell": "b3deba33-c1e9-4673-8b1f-b205ee510b17",
-              "port": "6bbefc74-05e6-4c5a-94ea-7fca6431717d"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "PCIe/SATA",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "PCIe/SATA",
-              "threats": []
-            },
-            "labels": [
-              "PCIe/SATA"
-            ],
-            "id": "6747d82a-8917-4c57-885a-6dd601446fe1",
-            "source": {
-              "cell": "b3deba33-c1e9-4673-8b1f-b205ee510b17",
-              "port": "75369b34-f239-444b-a51a-a297615bcaca"
-            },
-            "target": {
-              "cell": "75edaf94-bb9b-47f6-bd70-ed266e72367c",
-              "port": "e76c52e7-1caa-4eee-b823-383bfe4b7b9d"
-            },
-            "vertices": []
-          },
-          {
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
@@ -1175,8 +1083,58 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "mTLS/HTTPS/gRPC",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "mTLS/HTTPS/gRPC",
+              "threats": []
+            },
+            "labels": [
+              "mTLS/HTTPS/gRPC"
+            ],
+            "id": "e0cc02a0-3a83-4410-b3ac-f3a868795d90",
+            "source": {
+              "cell": "a6cf15e3-3862-4be0-8fd7-ce6aee699858",
+              "port": "75369b34-f239-444b-a51a-a297615bcaca"
+            },
+            "target": {
+              "cell": "02bde570-42af-42f8-bb80-f6cd1646b6ea",
+              "port": "6c2e6c8c-ad46-43ad-937e-67cf019969f3"
+            },
+            "vertices": [
+              {
+                "x": 1050,
+                "y": 0
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1197,28 +1155,14 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": true,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [
-                {
-                  "id": "584dff56-fbc6-4e11-b797-e43a7ab82f70",
-                  "title": "Manipulación de señales (replay)",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Tampering",
-                  "description": "No suggestions available for this context. Add one manually please",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 1,
-                  "score": ""
-                }
-              ],
+              "threats": [],
               "threatFrequency": {
-                "tampering": 1,
+                "tampering": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
@@ -1240,8 +1184,7 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1257,50 +1200,30 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "mTLS/HTTPS/gRPC",
+              "name": "PCIe/SATA",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": true,
               "isEncrypted": false,
               "isPublicNetwork": false,
-              "protocol": "mTLS/HTTPS/gRPC",
-              "threats": [
-                {
-                  "id": "e3a02127-8ed4-4e0a-a562-a80113be1a31",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 3,
-                  "score": ""
-                }
-              ]
+              "protocol": "PCIe/SATA",
+              "threats": []
             },
             "labels": [
-              "mTLS/HTTPS/gRPC"
+              "PCIe/SATA"
             ],
-            "id": "e0cc02a0-3a83-4410-b3ac-f3a868795d90",
+            "id": "779f0947-ab32-413b-8748-4bffce5fda89",
             "source": {
-              "cell": "a6cf15e3-3862-4be0-8fd7-ce6aee699858",
-              "port": "75369b34-f239-444b-a51a-a297615bcaca"
+              "cell": "75edaf94-bb9b-47f6-bd70-ed266e72367c",
+              "port": "13c7df40-c2b8-4ceb-946a-7a74def4e42b"
             },
             "target": {
-              "cell": "02bde570-42af-42f8-bb80-f6cd1646b6ea",
+              "cell": "f08463c2-fe65-4c2a-a503-a365897f2372",
               "port": "6c2e6c8c-ad46-43ad-937e-67cf019969f3"
-            },
-            "vertices": [
-              {
-                "x": 1050,
-                "y": 0
-              }
-            ]
+            }
           },
           {
             "position": {
@@ -1547,126 +1470,6 @@
           },
           {
             "position": {
-              "x": 595,
-              "y": -490
-            },
-            "size": {
-              "width": 130,
-              "height": 100
-            },
-            "attrs": {
-              "text": {
-                "text": "Physical Ports \n(I/O)"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "zIndex": 13,
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "6c2e6c8c-ad46-43ad-937e-67cf019969f3"
-                },
-                {
-                  "group": "right",
-                  "id": "75369b34-f239-444b-a51a-a297615bcaca"
-                },
-                {
-                  "group": "bottom",
-                  "id": "6bbefc74-05e6-4c5a-94ea-7fca6431717d"
-                },
-                {
-                  "group": "left",
-                  "id": "f193305d-dc38-4f22-abd8-c4a166afe1d9"
-                }
-              ]
-            },
-            "id": "b3deba33-c1e9-4673-8b1f-b205ee510b17",
-            "data": {
-              "type": "tm.Process",
-              "name": "Physical Ports \n(I/O)",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": []
-            }
-          },
-          {
-            "position": {
               "x": 0,
               "y": -295
             },
@@ -1796,8 +1599,8 @@
                 "text": "Monitoring/\nActuators"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1894,12 +1697,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "680096bf-3393-4bd2-b03e-fdbf3f747585",
+                  "title": "Reproducción de comandos a controladores de tráfico/actuadores por manipulación de señales",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -2145,6 +1970,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 3
+    "threatTop": 4
   }
 }
